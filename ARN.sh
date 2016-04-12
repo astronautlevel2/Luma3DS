@@ -13,6 +13,10 @@ then #If there is...
 	echo No updates found! #Echo debug message (The results of crontabs are mailed to you)
 	exit #Quit
 fi #Will only continue if there's a new commit
+if [ ${#message} > 75 ]
+then
+	message="$(echo $message | head -c 75)"
+fi
 echo $commit > ../../lastCommit
 make #Build ARN
 zip -r "ARN-${commit}.zip" ./out #Zip the release with the current date
