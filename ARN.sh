@@ -4,6 +4,7 @@ mkdir source #Creates the source directory in case it's not present
 cd source/ #Switches to the source directory
 git clone --recursive https://github.com/AuroraWright/AuReiNand.git #Clones ARN repo
 cd ./AuReiNand #Switch to ARN repo
+commitFull=$(git rev-parse HEAD)
 commit=$(git rev-parse --short HEAD) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
 if [ $commit = $(cat ../../lastCommit) ] #Check to see if there's a new commit
@@ -25,7 +26,7 @@ rm -rf ./out #Delete the release folder
 mv ARN*.zip ../../builds #Move the zipped release to the builds directory
 cd /home/alex/AuReiNand/ #switch to the root of the directory
 cat current.html > /tmp/tmpcur #Copy the current list of table elements
-echo "<tr><td><p><a href="/AuReiNand/builds/ARN-${commit}.zip">ARN-${commit}.zip</a></p></td><td>${commit}</td><td>$(date +"%Y-%m-%d")</td><td>${message}</td></tr>" > current.html #Add a new table data element to the top of the list
+echo "<tr><td><p><a href="/AuReiNand/builds/ARN-${commit}.zip">ARN-${commit}.zip</a></p></td><td><a href=https://github.com/AuroraWright/AuReiNand/commit/${commitFull}>${commit}</a></td><td>$(date +"%Y-%m-%d")</td><td>${message}</td></tr>" > current.html #Add a new table data element to the top of the list
 cat /tmp/tmpcur >> current.html #Add the old table elements to the bottom of the list
 cat top.html > index.html #Copy the top half of the webpage to index
 cat current.html >> index.html #Copy the list of table elements to the index
