@@ -6,7 +6,7 @@ git clone --recursive https://github.com/AuroraWright/AuReiNand.git #Clones ARN 
 cd ./AuReiNand #Switch to ARN repo
 commit=$(git rev-parse --short HEAD) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
-if [ $commit == $(cat ../../lastCommit) ] #Check to see if there's a new commit
+if [ $commit = $(cat ../../lastCommit) ] #Check to see if there's a new commit
 then #If there is...
 	cd ../ #Clean the directory
 	rm -rf AuReiNand #Clean the directory
