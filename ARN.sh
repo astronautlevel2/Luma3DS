@@ -16,6 +16,7 @@ fi #Will only continue if there's a new commit
 if [ ${#message} > 75 ]
 then
 	message="$(echo $message | head -c 75)"
+	message="$message..."
 fi
 echo $commit > ../../lastCommit
 make #Build ARN
