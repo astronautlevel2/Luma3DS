@@ -14,6 +14,10 @@ then #If there is...
 	echo No updates found! #Echo debug message (The results of crontabs are mailed to you)
 	exit #Quit
 fi #Will only continue if there's a new commit
+if [ $message = $(cat ../../lastMessage) ]
+then
+	tail -n +2 "../../current.html" > "../../current.html.tmp" && mv "../../current.html.tmp" "../../current.html"
+fi
 if [ ${#message} -ge 75 ]
 then
 	message="$(echo $message | head -c 75)"
