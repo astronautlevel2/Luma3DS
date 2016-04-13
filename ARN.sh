@@ -18,6 +18,7 @@ if [ $message = $(cat ../../lastMessage) ]
 then
 	tail -n +2 "../../current.html" > "../../current.html.tmp" && mv "../../current.html.tmp" "../../current.html"
 fi
+cat $message > ../../lastMessage
 if [ ${#message} -ge 75 ]
 then
 	message="$(echo $message | head -c 75)"
