@@ -4,6 +4,7 @@ mkdir source #Creates the source directory in case it's not present
 cd source/ #Switches to the source directory
 git clone --recursive https://github.com/AuroraWright/AuReiNand.git #Clones ARN repo
 cd ./AuReiNand #Switch to ARN repo
+oldCommit=$(cat ../../lastCommit)
 commitFull=$(git rev-parse HEAD)
 commit=$(git rev-parse --short HEAD) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
@@ -17,6 +18,7 @@ fi #Will only continue if there's a new commit
 if [ "$message" = "$(cat ../../lastMessage)" ]
 then
 	tail -n +2 "../../current.html" > "../../current.html.tmp" && mv "../../current.html.tmp" "../../current.html"
+	rm -f ../../builds/ARN-$oldCommit.zip
 fi
 echo $message > ../../lastMessage
 if [ ${#message} -ge 75 ]
