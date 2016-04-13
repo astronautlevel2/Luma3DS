@@ -14,7 +14,7 @@ then #If there is...
 	echo No updates found! #Echo debug message (The results of crontabs are mailed to you)
 	exit #Quit
 fi #Will only continue if there's a new commit
-if [ ${#message} > 75 ]
+if [ ${#message} -ge 75 ]
 then
 	message="$(echo $message | head -c 75)"
 	message="$message..."
