@@ -12,6 +12,10 @@ body {
 	width: 65%;
 }
 
+.toplink {
+	color: black;
+}
+
 table, th, td {
 	padding: 10px;
 	border: 1px solid black;
