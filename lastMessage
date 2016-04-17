@@ -1,1 +1,1 @@
-Removed checking for _ to make old filenames work
+Reinstated the L+SELECT payload
