@@ -1,1 +1,1 @@
-Remove useless sdmmc code (we do not need NAND init/read from loader, or write at all
+We do not need this anymore (D9/E9/GM9 were updated)
