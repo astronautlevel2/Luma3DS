@@ -1,1 +1,1 @@
-Fixed L+SELECT payload being broken (annoying LFN to 8.3 conversion rules). Now the payload is sel_NAME.bin
+Remove LFN support from the loader FatFs as it is not used. Slims down the binary by ~4 KBs
