@@ -1,1 +1,1 @@
-Remove LFN support from the loader FatFs as it is not used. Slims down the binary by ~4 KBs
+Update FatFs to 0.12
