@@ -1,1 +1,1 @@
-Reinstated the L+SELECT payload
+Fixed L+SELECT payload being broken (annoying LFN to 8.3 conversion rules). Now the payload is sel_NAME.bin
