@@ -1,1 +1,1 @@
-Update FatFs to 0.12
+Remove useless sdmmc code (we do not need NAND init/read from loader, or write at all
