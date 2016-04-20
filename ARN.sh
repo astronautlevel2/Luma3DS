@@ -30,6 +30,7 @@ echo $commit > ../../lastCommit
 make #Build ARN
 zip -r "ARN-${commit}.zip" ./out #Zip the release with the current date
 rm -rf ./out #Delete the release folder
+cp ARN*.zip ../../latest.zip
 mv ARN*.zip ../../builds #Move the zipped release to the builds directory
 cd /home/alex/AuReiNand/ #switch to the root of the directory
 cat current.html > /tmp/tmpcur #Copy the current list of table elements
@@ -38,6 +39,7 @@ cat /tmp/tmpcur >> current.html #Add the old table elements to the bottom of the
 cat top.html > index.html #Copy the top half of the webpage to index
 cat current.html >> index.html #Copy the list of table elements to the index
 cat bottom.html >> index.html #Copy the bottom half of the webpage to index
+git add /home/alex/AuReiNand/*
 git add /home/alex/AuReiNand/builds/* #Add all new build files
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
 git push #Push to repo
