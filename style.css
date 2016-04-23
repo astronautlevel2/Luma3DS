@@ -1,6 +1,7 @@
 body {
 	background: url("background.png");
 	text-align: center;
+	background-attachment: fixed;
 }
 
 .main {
