@@ -42,5 +42,18 @@ cat bottom.html >> index.html #Copy the bottom half of the webpage to index
 rm -rf /home/alex/AuReiNand/source/
 git add /home/alex/AuReiNand/latest.zip
 git add /home/alex/AuReiNand/builds/* #Add all new build files
+
+#Tbh I just want my code to be at least bearable which is why I made this a separate script called by the main one
+#Decided I didn't like that but was too lazy to delete the last comment
+cd ~/AuReiNand
+cat atomcurrent.xml > atombackup.xml
+echo "<entry>" >> atomcurrent.html
+echo "<title>${commit} Built</title>" >> atomcurrent.html
+echo "<link href=\"http://astronautlevel2.github.io/Luma3DS/builds/Luma-${commit}.zip\"/>" >> atomcurrent.html
+echo "<summary>${message}</summary>" >> atomcurrent.html
+echo "</entry>" >> atomcurrent.html
+cat atombackup.xml >> atomcurrent.html
+rm atombackup.xml
+
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
 git push #Push to repo
