@@ -53,7 +53,10 @@ echo "<link href=\"http://astronautlevel2.github.io/Luma3DS/builds/Luma-${commit
 echo "<summary>${message}</summary>" >> atomcurrent.html
 echo "</entry>" >> atomcurrent.html
 cat atombackup.xml >> atomcurrent.html
+cat atomtop.xml > atom.xml
+cat atomcurrent.xml >> atom.xml
+cat atombottom.xml >> atom.xml
 rm atombackup.xml
-
+git add atom*
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
 git push #Push to repo
