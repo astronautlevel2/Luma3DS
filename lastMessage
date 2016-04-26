@@ -1,1 +1,1 @@
-Added python implementation of the path changer from @TuxSH
+Apply the eShop update skipping patch only if the updated NAND was not booted (depends on the "Use SysNAND FIRM as default" option
