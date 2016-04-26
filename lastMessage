@@ -1,1 +1,1 @@
-Apply the eShop update skipping patch only if the updated NAND was not booted (depends on the "Use SysNAND FIRM as default" option
+Rename "Use SysNAND FIRM as default" to "SysNAND is updated"
