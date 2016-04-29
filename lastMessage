@@ -1,1 +1,1 @@
-Move loadPayload to fs.c, and the path to the beginning of the chainloader
+We do not need all that space anymore
