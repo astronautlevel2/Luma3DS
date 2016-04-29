@@ -1,1 +1,1 @@
-Remade the chainloader to only try to load the right payload for the pressed button, got rid of the default payload (start now boots "start_NAME.bin"), sel_NAME is now select_NAME as there is no more SFN limitations anymore
+Fix external FIRM loading
