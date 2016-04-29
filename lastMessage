@@ -1,1 +1,1 @@
-Fix external FIRM loading
+Move loadPayload to fs.c, and the path to the beginning of the chainloader
