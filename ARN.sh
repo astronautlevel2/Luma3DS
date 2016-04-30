@@ -8,7 +8,15 @@ oldCommit=$(cat ../../lastCommit)
 commitFull=$(git rev-parse HEAD)
 commit=$(git rev-parse --short HEAD) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
-if [ $commit = $(cat ../../lastCommit) ] #Check to see if there's a new commit
+ver=$(git describe --tags)
+skipCheck=false
+lastVer=$(cat ../../lastVer)
+if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ "$ver" != "$lastVer" ]
+then
+	skipCheck=true
+fi
+echo $skipCheck
+if [ $commit = $(cat ../../lastCommit) ] && [ skipCheck = false ] #Check to see if there's a new commit
 then #If there is...
 	cd ../ #Clean the directory
 	rm -rf Luma3DS #Clean the directory
