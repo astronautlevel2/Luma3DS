@@ -18,7 +18,7 @@ then
 	newTag=true
 fi
 echo $newTag
-if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ newTag=true ]
+if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ newTag=false ]
 then
 	skipCheck=true
 fi
