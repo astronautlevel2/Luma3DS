@@ -18,7 +18,11 @@ then
 	newTag=true
 fi
 echo $newTag
-if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ newTag=false ]
+echo $commit
+echo $(cat ../../lastCommit)
+echo $message
+echo $(cat ../../lastMessage)
+if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ $newTag = true ]
 then
 	skipCheck=true
 fi
@@ -47,7 +51,7 @@ make #Build Luma3DS
 zip -r "Luma-${commit}.zip" ./out #Zip the release with the current date
 rm -rf ./out #Delete the release folder
 cp Luma*.zip ../../latest.zip
-if [ newTag = true ]
+if [ $newTag = true ]
 then
  cp Luma*.zip ../../release.zip
 fi
