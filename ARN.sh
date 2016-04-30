@@ -13,10 +13,11 @@ skipCheck=false
 lastVer=$(cat ../../lastVer)
 echo $ver
 echo $lastVer
-if [ $ver != lastVer ]
+if [ $ver == $lastVer ]
 then
 	newTag=true
 fi
+echo $newTag
 if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ newTag=true ]
 then
 	skipCheck=true
