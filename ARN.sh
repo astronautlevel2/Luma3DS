@@ -15,7 +15,7 @@ if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../last
 then
 	skipCheck=true
 fi
-echo $skipCheck
+echo $ver > ../../lastVer
 if [ $commit = $(cat ../../lastCommit) ] && [ skipCheck = false ] #Check to see if there's a new commit
 then #If there is...
 	cd ../ #Clean the directory
