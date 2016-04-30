@@ -1,4 +1,4 @@
-#!/bin/bash
+[ "$ver" != "$lastVer" ]#!/bin/bash
 cd /home/alex/AuReiNand #Switching to the repo's directory
 mkdir source #Creates the source directory in case it's not present
 cd source/ #Switches to the source directory
@@ -11,19 +11,22 @@ message=$(git log -1 --pretty=%B | head -n1)
 ver=$(git describe --tags)
 skipCheck=false
 lastVer=$(cat ../../lastVer)
+echo $ver
+echo $lastVer
 if [ "$commit" = "$(cat ../../lastCommit)" ] && [ "$message" = "$(cat ../../lastMessage)" ] && [ "$ver" != "$lastVer" ]
 then
 	skipCheck=true
 fi
+echo $skipCheck
 echo $ver > ../../lastVer
-if [ $commit = $(cat ../../lastCommit) ] && [ skipCheck = false ] #Check to see if there's a new commit
+if [ $commit = $(cat ../../lastCommit) ] && [ $skipCheck = false ] #Check to see if there's a new commit
 then #If there is...
 	cd ../ #Clean the directory
 	rm -rf Luma3DS #Clean the directory
 	echo No updates found! #Echo debug message (The results of crontabs are mailed to you)
 	exit #Quit
 fi #Will only continue if there's a new commit
-if [ "$message" = "$(cat ../../lastMessage)" ]
+if [ $commit = $(cat ../../lastCommit) ] && [ skipCheck = false ]if [ "$message" = "$(cat ../../lastMessage)" ]
 then
 	tail -n +2 "../../current.html" > "../../current.html.tmp" && mv "../../current.html.tmp" "../../current.html"
 	rm -f ../../builds/Luma-$oldCommit.zip
