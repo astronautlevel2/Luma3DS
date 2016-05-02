@@ -1,1 +1,1 @@
-Fixed L+R booting the updated NAND with the FIRM from the outdated NAND
+Fixed crashes loading an emuNAND if the SD was too small to be able to hold it
