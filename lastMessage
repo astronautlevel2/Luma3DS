@@ -1,1 +1,1 @@
-Get rid of the double FatFs
+Cleanup, removed redundant file reading code
