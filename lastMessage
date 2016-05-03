@@ -1,1 +1,1 @@
-Code refactoring, added support for SAFE_MODE FIRM on A9LH (you can update safely from it now). Thanks to delebile for the O3DS SAFE_MODE FIRM FIRM0/1 protection!
+Get rid of the double FatFs
