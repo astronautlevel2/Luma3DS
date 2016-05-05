@@ -1,1 +1,1 @@
-Cleanup, removed redundant file reading code
+Added support for 9.5 New 3DS FIRM to the arm9loader
