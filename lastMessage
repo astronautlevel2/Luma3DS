@@ -1,1 +1,1 @@
-Update README.md
+Use a much better algorithm for getLoader (Luma3DS boots around 0.25s faster now)
