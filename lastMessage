@@ -1,1 +1,1 @@
-Moved GPU register clearing to the config only, as it causes artifacts
+Add precise and reliable time measurement (with a resolution of 67MHz).
