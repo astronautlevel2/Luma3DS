@@ -1,1 +1,1 @@
-Cleanup, fix latest ctrulib, removed reboot after config (needs testing!), fixed L+SELECT payload
+Moved GPU register clearing to the config only, as it causes artifacts
