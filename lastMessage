@@ -1,1 +1,1 @@
-Minor pedantic changes (3)
+Skip the svcBackdoor function on 9.0 O3DS FIRM - <= 9.5 N3DS FIRM
