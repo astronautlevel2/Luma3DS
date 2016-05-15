@@ -7,7 +7,7 @@ oldCommit=$(cat ../../lastCommit)
 commitFull=$(git rev-parse HEAD)
 commit=$(git rev-parse --short HEAD) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
-ver=$(git describe --tags)
+ver=$(git describe --tags --abbrev=0)
 newTag=false
 skipCheck=false
 lastVer=$(cat ../../lastVer)
@@ -67,6 +67,7 @@ rm -rf /home/alex/AuReiNand/source/
 git add /home/alex/AuReiNand/latest.zip
 git add /home/alex/AuReiNand/builds/* #Add all new build files
 git add /home/alex/AuReiNand/release.zip
+git add /home/alex/AuReiNand/lastVer
 
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
 git push #Push to repo
