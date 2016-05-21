@@ -13,6 +13,7 @@ skipCheck=false
 lastVer=$(cat ../../lastVer)
 echo $ver
 echo $lastVer
+echo $( git describe --tags --match v[0-9]* --abbrev=40 | grep -o -e '-[0-9]*-' | sed 's/-//g') > ../../commitNums
 if [ $ver == $lastVer ]
 then
 	newTag=true
@@ -65,8 +66,10 @@ cat current.html >> index.html #Copy the list of table elements to the index
 cat bottom.html >> index.html #Copy the bottom half of the webpage to index
 rm -rf /home/alex/AuReiNand/source/
 git add /home/alex/AuReiNand/latest.zip
+git add /home/alex/AuReiNand/commitNums
 git add /home/alex/AuReiNand/builds/* #Add all new build files
 git add /home/alex/AuReiNand/release.zip
+git add /home/alex/AuReiNand/lastCommit
 git add /home/alex/AuReiNand/lastVer
 
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
