@@ -1,1 +1,1 @@
-Move patches to patches.c and emunand.c, section 0 copying to launchFirm for consistency
+Move patches within emunand.c
