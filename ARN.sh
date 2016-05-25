@@ -5,7 +5,7 @@ git clone --recursive https://github.com/AuroraWright/Luma3DS.git #Clones ARN re
 cd ./Luma3DS #Switch to ARN repo
 oldCommit=$(cat ../../lastCommit)
 commitFull=$(git rev-parse HEAD)
-commit=$(git rev-parse --short HEAD) #Get latest commit hash
+commit=$(git rev-parse HEAD | head -c 8) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
 ver=$(git describe --tags --abbrev=0)
 newTag=false
