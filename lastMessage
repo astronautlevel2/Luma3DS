@@ -1,1 +1,1 @@
-Update Makefile
+Move patches to patches.c and emunand.c, section 0 copying to launchFirm for consistency
