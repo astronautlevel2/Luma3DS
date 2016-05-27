@@ -8,7 +8,7 @@ commitFull=$(git rev-parse HEAD)
 commit=$(git rev-parse HEAD | head -c 8) #Get latest commit hash
 message=$(git log -1 --pretty=%B | head -n1)
 ver=$(git describe --tags --abbrev=0)
-newTag=false
+newTag=true
 skipCheck=false
 lastVer=$(cat ../../lastVer)
 echo $ver
@@ -16,7 +16,7 @@ echo $lastVer
 echo $( git describe --tags --match v[0-9]* --abbrev=40 | grep -o -e '-[0-9]*-' | sed 's/-//g') > ../../commitNums
 if [ $ver == $lastVer ]
 then
-	newTag=true
+	newTag=false
 fi
 echo $newTag
 echo $commit
