@@ -1,1 +1,1 @@
-We don't need to flush DCache when launching payloads.
+Refactor firm.c as well as other files
