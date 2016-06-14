@@ -1,1 +1,1 @@
-Implement our own DCache cleaning functions
+We need to clean and flush caches before jumping to payloads, actually.
