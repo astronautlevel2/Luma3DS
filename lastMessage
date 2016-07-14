@@ -1,1 +1,1 @@
-Minor stuff
+Add support for launching >= 6.x/7.x emuNANDs properly when the sysNAND is on a lower firmware version
