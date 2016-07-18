@@ -1,1 +1,1 @@
-Remove code to skip the rbeoot patch on 9.0 as it is not needed anymore with A9LH and constitutes a brick risk
+Bool-ify
