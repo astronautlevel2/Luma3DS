@@ -1,1 +1,1 @@
-Added FIRM version detection, removed firmware.bin loading unless an unsupported O3DS NATIVE_FIRM (pre-5.0) is being loaded, skip patching old unsupported O3DS AGB/TWL FIRMs, only apply 11.0 patches with 11.0 or greater
+Fix firmware.bin loading
