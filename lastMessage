@@ -1,1 +1,1 @@
-Add support for launching >= 6.x/7.x emuNANDs properly when the sysNAND is on a lower firmware version
+Fixed Luma allowing users to go to the configuration after AGB_FIRM quits
