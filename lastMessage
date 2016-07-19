@@ -1,1 +1,1 @@
-Added error screen when booting an unsupported NAND with no firmware.bin or writing to the config fails, added code for creating the "luma" directory if it is missing
+Minor stuff
