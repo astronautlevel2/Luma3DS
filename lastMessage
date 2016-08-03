@@ -1,1 +1,1 @@
-pin.c cleanup
+Don't make any assumption regarding version when loading an external firmware file.
