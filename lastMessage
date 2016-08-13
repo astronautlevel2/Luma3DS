@@ -1,1 +1,1 @@
-Disable interrupts and do some refactoring.
+Replace "Enable splash screen with no screen-init" by "Display splash screen before payloads".
