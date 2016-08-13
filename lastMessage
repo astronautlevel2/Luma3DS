@@ -1,1 +1,1 @@
-Replace "Enable splash screen with no screen-init" by "Display splash screen before payloads".
+Remove the empty "luma" folder from the output folder since it will be created automatically when running Luma3DS.
