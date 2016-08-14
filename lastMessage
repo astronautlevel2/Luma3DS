@@ -1,1 +1,1 @@
-Remove the empty "luma" folder from the output folder since it will be created automatically when running Luma3DS.
+Enable access to the ITCM (older k9lh payloads disabled access to it).
