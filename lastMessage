@@ -1,1 +1,1 @@
-Make loader more readable, use an array instead of a fixed location for the emuNAND test sector
+Pin cleanup
