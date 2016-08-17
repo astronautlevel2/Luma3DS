@@ -1,1 +1,1 @@
-Implement svcGetCFWInfo in place of svc 0x2e (which is stubbed). Luma3DS now boots ca. 1.5s faster
+Update patches.c
