@@ -1,1 +1,1 @@
-Fix wrong bootconfig being picked up by 3ds_injector, cleanup
+"Fix" the twlbg patches and make them optional
