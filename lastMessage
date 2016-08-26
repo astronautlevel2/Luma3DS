@@ -1,1 +1,1 @@
-Fix bug.
+Fix wrong bootconfig being picked up by 3ds_injector, cleanup
