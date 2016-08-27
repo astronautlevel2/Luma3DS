@@ -1,1 +1,1 @@
-Fix reboot patch for 5.x/6.x
+Add support (firmprot and firmlaunch patches) for 2.x on sysNAND
