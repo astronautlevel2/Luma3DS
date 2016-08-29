@@ -1,1 +1,1 @@
-Fix build issues on some environments.
+Replace pinKeyToLetter with a C implementation, minor cleanup
