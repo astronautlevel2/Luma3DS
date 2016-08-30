@@ -1,1 +1,1 @@
-Rewrite the module copying function
+Get rid of createDirectory and make fileWrite handle directory tree creation
