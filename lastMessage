@@ -1,1 +1,1 @@
-Get rid of createDirectory and make fileWrite handle directory tree creation
+Introduce a strcat replacement
