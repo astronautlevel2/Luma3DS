@@ -1,1 +1,1 @@
-mcuReboot now checks for isFirmlaunch
+Save 4 bytes as we are space constrained on N3DS
