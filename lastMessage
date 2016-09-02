@@ -1,1 +1,1 @@
-Update to latest FatFs patch
+Move config and PIN paths to the respective headers
