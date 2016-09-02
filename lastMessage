@@ -1,1 +1,1 @@
-Move config and PIN paths to the respective headers
+mcuReboot now checks for isFirmlaunch
