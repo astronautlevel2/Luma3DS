@@ -1,1 +1,1 @@
-Small cleanup
+Cleanup, use sizeof() for pattern memsearches
