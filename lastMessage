@@ -1,1 +1,1 @@
-Round NAND size to 4MB for the default layout
+Added support for up to 4 emuNANDs (the "second emuNAND as default" toggle is now a multi option, and you can choose the emuNAND on startup by holding Up (1)/Right (2)/Down (3)/Left (4) when EmuNAND is being booted), added a B payload as the B button was freed
