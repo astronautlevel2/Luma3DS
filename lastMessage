@@ -1,1 +1,1 @@
-Refactor the emuNAND code
+Round NAND size to 4MB for the default layout
