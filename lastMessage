@@ -1,1 +1,1 @@
-Revert "Remove some ifdefs"
+memsearch() replaced with a Boyer-Moore Horspool implementation due to Quick Search being buggy in some rare cases
