@@ -1,1 +1,1 @@
-memsearch() replaced with a Boyer-Moore Horspool implementation due to Quick Search being buggy in some rare cases
+Let's change it here as well
