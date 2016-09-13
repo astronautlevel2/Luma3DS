@@ -1,1 +1,1 @@
-Cleanup, add boundary checks for files loaded from SD
+Get rid of selectScreen, allow clearing the screens separately, implement a PIN message function on the bottom screen (you can place a textfile named pinmessage.txt in /luma, with 800 characters max)
