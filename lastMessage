@@ -1,1 +1,1 @@
-Get rid of selectScreen, allow clearing the screens separately, implement a PIN message function on the bottom screen (you can place a textfile named pinmessage.txt in /luma, with 800 characters max)
+Implement custom "Ver." string, must be in a textfile named "customversion.txt" in /luma, with base format Ver. %d.%d.%d-%d%ls, implemented descriptions for the options on the bottom screen, you can now boot SysNAND with an EmuNAND FIRM other than the first one, cleanup
