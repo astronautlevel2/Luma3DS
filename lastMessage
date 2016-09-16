@@ -1,1 +1,1 @@
-If 'Autoboot SysNAND' is unchecked, it's impossible to select the EmuNAND if having a corrisponding directional pad payload. Skip the payload launching if 'A' is held to make this possible
+Add UTF-8 support to customversion.txt
