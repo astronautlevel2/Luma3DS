@@ -1,1 +1,1 @@
-Minor stuff
+Refactor arm9Loader(), fix decrypted-arm9bin FIRM support
