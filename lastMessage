@@ -1,1 +1,1 @@
-Account for trailing newlines in .txts
+Also support DOS newlines, and break on newline in custom version
