@@ -1,1 +1,1 @@
-Make error() reboot if in a firmlaunch environment, improve errors
+Allow for separate custom versions for each NAND
