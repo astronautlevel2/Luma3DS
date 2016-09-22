@@ -1,1 +1,1 @@
-Better to make extra sure here
+Make error() reboot if in a firmlaunch environment, improve errors
