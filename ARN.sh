@@ -1,4 +1,4 @@
-cd /home/alex/AuReiNand #Switching to the repo's directory
+cd /home/alex/Luma3DS #Switching to the repo's directory
 mkdir source #Creates the source directory in case it's not present
 cd source/ #Switches to the source directory
 git clone --recursive https://github.com/AuroraWright/Luma3DS.git #Clones ARN repo
@@ -57,20 +57,20 @@ then
  cp Luma*.zip ../../release.zip
 fi
 mv Luma*.zip ../../builds #Move the zipped release to the builds directory
-cd /home/alex/AuReiNand/ #switch to the root of the directory
+cd /home/alex/Luma3DS/ #switch to the root of the directory
 cat current.html > /tmp/tmpcur #Copy the current list of table elements
 echo "<tr><td><p><a href="/Luma3DS/builds/Luma-${commit}.zip">Luma-${commit}.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/${commitFull}>${commit}</a></td><td>$(date +"%Y-%m-%d")</td><td>${message}</td></tr>" > current.html #Add a new table data element to the top of the list
 cat /tmp/tmpcur >> current.html #Add the old table elements to the bottom of the list
 cat top.html > index.html #Copy the top half of the webpage to index
 cat current.html >> index.html #Copy the list of table elements to the index
 cat bottom.html >> index.html #Copy the bottom half of the webpage to index
-rm -rf /home/alex/AuReiNand/source/
-git add /home/alex/AuReiNand/latest.zip
-git add /home/alex/AuReiNand/commitNums
-git add /home/alex/AuReiNand/builds/* #Add all new build files
-git add /home/alex/AuReiNand/release.zip
-git add /home/alex/AuReiNand/lastCommit
-git add /home/alex/AuReiNand/lastVer
+rm -rf /home/alex/Luma3DS/source/
+git add /home/alex/Luma3DS/latest.zip
+git add /home/alex/Luma3DS/commitNums
+git add /home/alex/Luma3DS/builds/* #Add all new build files
+git add /home/alex/Luma3DS/release.zip
+git add /home/alex/Luma3DS/lastCommit
+git add /home/alex/Luma3DS/lastVer
 
 git commit -a -m "Updated builds - Automated Commit Message" #Commit the new build and index
 git push #Push to repo
