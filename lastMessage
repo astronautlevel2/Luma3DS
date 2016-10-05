@@ -1,1 +1,1 @@
-Fix the arm11 exception handlers on < 7.x
+Make the exception dump parser output the disassembly of the dumped code (when it's possible)
