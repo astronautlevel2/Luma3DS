@@ -1,1 +1,1 @@
-Fix diskio.c stuff
+Change SAFE_MODE detection for <= 2.1
