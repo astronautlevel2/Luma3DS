@@ -1,1 +1,1 @@
-Change SAFE_MODE detection for <= 2.1
+Prevent reading FIRM files if SD is not mounted
