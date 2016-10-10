@@ -1,1 +1,1 @@
-Lots of refactoring, main() has its own file yet again, properly handle failed patches/decryption steps, support TWL and AGB FIRM since 3.0
+Fix derp
