@@ -1,1 +1,1 @@
-Figured I might as well do this
+Simplify the main logic, remove assumption that if not using A9LH, SysNAND can't have a newer FIRM than EmuNAND, fix derp
