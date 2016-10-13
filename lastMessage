@@ -1,1 +1,1 @@
-Simplify the main logic, remove assumption that if not using A9LH, SysNAND can't have a newer FIRM than EmuNAND, fix derp
+Fix A9LH patches not being applied after firmlaunch
