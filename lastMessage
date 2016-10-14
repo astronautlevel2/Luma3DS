@@ -1,1 +1,1 @@
-Make loader read from CTRNAND just if SD is not mounted
+Do the same with the reboot patch
