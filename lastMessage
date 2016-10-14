@@ -1,1 +1,1 @@
-Not needed
+Make loader read from CTRNAND just if SD is not mounted
