@@ -14,7 +14,7 @@ lastVer=$(cat ../../lastVer)
 echo $ver
 echo $lastVer
 echo $( git describe --tags --match v[0-9]* --abbrev=40 | grep -o -e '-[0-9]*-' | sed 's/-//g') > ../../commitNums
-if [ "$ver" == "$lastVer" ]
+if [ "$ver" = "$lastVer" ]
 then
 	newTag=false
 fi
