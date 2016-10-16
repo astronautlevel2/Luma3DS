@@ -1,1 +1,1 @@
-Fix FIRM size check
+Add safety checks for loaded FIRM modules
