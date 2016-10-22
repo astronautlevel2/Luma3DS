@@ -1,1 +1,1 @@
-Fix derp
+Move hexAtoi to strings.c, add bound check to decAtoi
