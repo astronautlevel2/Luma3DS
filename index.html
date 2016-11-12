@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Alex's Luma3DS Builds</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-latest.js"></script> 
+	<script type="text/javascript" src="jquery.tablesorter.js"></script>
+	<script id="js">$(function() {
+
+	// initial sort set using sortList option
+	$(".table1").tablesorter({
+		theme : 'blue',
+		// sort on the first column and second column in ascending order
+		sortList: [[0,0],[1,0]]
+	});
+
+	// initial sort set using data-sortlist attribute (see HTML below)
+	$(".table2").tablesorter({
+		theme : 'blue'
+	});
+
+});</script>
+</head>
+<body>
+<div class="main">
+<h1>Luma3DS Builds!</h1>
+<p><i>Disclaimer: I am not associated with Aurora Wright. These builds are provided entirely unofficially and entirely untested. Use at your own risk.</i></p>
+<p>All commits are now signed: See <a href="https://github.com/astronautlevel2/Luma3DS/commits/gh-pages">the commits page</a> if you want to verify the integrity of the builds</p>
+<table class="table2" data-sortlist="[[0,0],[2,0]]">
+	<thead>
+		<tr>
+			<th style="cursor: pointer">File</th>
+			<th style="cursor: pointer">Commit</th>
+			<th style="cursor: pointer">Date</th>
+			<th style="cursor: pointer">Message</th>
+		</tr>
+	</thead>
+	<tbody>
+<tr><td><p><a href=/Luma3DS/builds/Luma-0b16d887.zip>Luma-0b16d887.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/0b16d88756fdf6eb7671f912d8627d0435d1802b>0b16d887</a></td><td>2016-11-12</td><td>Minor stuff</td></tr>
+<tr><td><p><a href=/Luma3DS/builds/Luma-0b16d887.zip>Luma-0b16d887.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/0b16d88756fdf6eb7671f912d8627d0435d1802b>0b16d887</a></td><td>2016-11-12</td><td>Minor stuff</td></tr>
+<tr><td><p><a href=/Luma3DS/builds/Luma-.zip>Luma-.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/></a></td><td></td><td></td></tr>
+	</tbody>
+</table>
+</div>
+</body>
+</html>
