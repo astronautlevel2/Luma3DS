@@ -67,8 +67,8 @@ cat bottom.html >> index.html #Copy the bottom half of the webpage to index
 rm -rf /home/alex/Luma3DS/source/
 git add /home/alex/Luma3DS/latest.zip
 git add /home/alex/Luma3DS/commitNums
-git add /home/alex/builds/* #Add all new build files
-git add /home/alex/release.zip
+git add /home/alex/Luma3DS/builds/* #Add all new build files
+git add /home/alex/Luma3DS/release.zip
 git add /home/alex/Luma3DS/lastCommit
 git add /home/alex/Luma3DS/lastVer
 
