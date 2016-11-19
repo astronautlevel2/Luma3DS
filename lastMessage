@@ -1,1 +1,1 @@
-Cleanup, fixed exceptions derp, support RomFS from CTRNAND, patching features for NAND titles
+Implemented ips patcher for code.bin, extended patching to applets
