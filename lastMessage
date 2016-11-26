@@ -1,1 +1,1 @@
-Remove useless makefile rules
+Include base_tools instead of specifying binaries manually
