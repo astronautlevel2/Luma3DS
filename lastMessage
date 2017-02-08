@@ -1,1 +1,1 @@
-Update patcher.c
+"Fix" the kernel9loader function and always set >= 9.6 keys, separately
