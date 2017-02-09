@@ -1,1 +1,1 @@
-Stub svc 0x59
+Implement aes_setkey for TWL keyslots + TWL console info/crypto init
