@@ -1,1 +1,1 @@
-Minor stuff
+Instead of filtering mountpoints in the LayeredFS payload by their first letters, change known mountpoints not starting with "r" to start with "r" throughout the code
