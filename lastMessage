@@ -1,1 +1,1 @@
-Minor stuff
+Use arm11 entry define for screen.c, fix isFirmlaunch not being always defined
