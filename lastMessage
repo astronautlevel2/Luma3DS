@@ -1,1 +1,1 @@
-Set 0x18..0x1F only on O3DS
+Fix memcmp u"nand" in fs.c
