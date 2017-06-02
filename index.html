@@ -1,3 +1,43 @@
+<html>
+<head>
+	<title>Alex's Luma3DS Builds</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-latest.js"></script> 
+	<script type="text/javascript" src="jquery.tablesorter.js"></script>
+	<script id="js">$(function() {
+
+	// initial sort set using sortList option
+	$(".table1").tablesorter({
+		theme : 'blue',
+		// sort on the first column and second column in ascending order
+		sortList: [[0,0],[1,0]]
+	});
+
+	// initial sort set using data-sortlist attribute (see HTML below)
+	$(".table2").tablesorter({
+		theme : 'blue'
+	});
+
+});</script>
+</head>
+<body>
+<div class="main">
+<h1>Luma3DS Builds!</h1>
+<p><i>Disclaimer: I am not associated with Aurora Wright. These builds are provided entirely unofficially and entirely untested. Use at your own risk.</i></p>
+<p>All commits are now signed: See <a href="https://github.com/astronautlevel2/Luma3DS/commits/gh-pages">the commits page</a> if you want to verify the integrity of the builds</p>
+<table class="table2" data-sortlist="[[0,0],[2,0]]">
+	<thead>
+		<tr>
+			<th style="cursor: pointer">File</th>
+			<th style="cursor: pointer">Commit</th>
+			<th style="cursor: pointer">Branch</th>
+			<th style="cursor: pointer">Date</th>
+			<th style="cursor: pointer">Message</th>
+		</tr>
+	</thead>
+	<tbody>
+<tr><td><p><a href=/Luma3DS/builds/Luma3DS-080a8cc.zip>Luma3DS-080a8cc.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/080a8cc917f1f62da6c443abfba890ed0595429e>080a8cc</a></td><td>b9s-next</td><td>2017-6-1</td><td>Add DS cart whitelist patch for home menu (both versions of the func should...</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-8308e1a.zip>Luma3DS-8308e1a.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/8308e1a8b84e305f3258fc98b26ab1016fe4f574>8308e1a</a></td><td>master</td><td>2017-5-31</td><td>Merge pull request #479 from Margen67/master</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-9570e6c.zip>Luma3DS-9570e6c.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/9570e6cbeca53128433abbf5e3473cb8a07fe69e>9570e6c</a></td><td>master</td><td>2017-5-31</td><td>Merge pull request #472 from gnmmarechal/master</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-36dcf43.zip>Luma3DS-36dcf43.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/36dcf43542f4079c0e6cf1c7692f4df5343d5585>36dcf43</a></td><td>b9s-next</td><td>2017-5-29</td><td>Update gitignore, Minor style changes</td></tr>
