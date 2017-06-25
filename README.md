@@ -1,5 +1,5 @@
 # astronautlevel2.github.io
-A small site and script made to automatically build the latest rxTools every night and add it to a website
+A small site and script made to automatically build the latest Luma3DS nightly every night and add it to a website
 
 TODO:
  * Find another way to store builds before I run out of github space
