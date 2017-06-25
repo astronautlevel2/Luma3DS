@@ -2,7 +2,7 @@ body {
 	background: url("background.png");
 	text-align: center;
 	background-attachment: fixed;
-    font-family: "nexa";
+    font-family: 'Muli', sans-serif;
 }
 
 .main {
