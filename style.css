@@ -2,12 +2,13 @@ body {
 	background: url("background.png");
 	text-align: center;
 	background-attachment: fixed;
+    font-family: 'Muli', sans-serif;
 }
 
 .main {
 	margin: auto;
-	background-color: rgba(255,255,255, .8);
-	padding: 1%;
+	background-color: rgba(255,255,255, .5);
+	padding: 0%;
 	padding-top: 0px;
 	text-align: center;
 	width: 65%;
@@ -16,7 +17,6 @@ body {
 .toplink {
 	color: black;
 }
-
 table, th, td {
 	padding: 10px;
 	border: 1px solid black;
@@ -25,13 +25,11 @@ table, th, td {
 }
 
 table { 
-	color: #FFF;
-	font-family: Helvetica, Arial, sans-serif;
 	width: 640px; 
 	border-collapse: collapse; 
 	border-spacing: 0; 
 }
-
+tr:hover {background-color: #f5f5f5}
 td, th { 
 	border: 1px solid transparent;
 	height: 30px; 
@@ -41,12 +39,13 @@ td, th {
 th {
 	background: #3d3d3d;
 	font-weight: bold;
-	color: #f8f8f8;
+	color: #f4f4f4;
+    font-size: 20;
 }
 
 td {
 	text-align: center;
-	color: #f2f2f2;
+	color: #f3f3f3;
 }
 
 tr td { background: #777; }   
