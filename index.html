@@ -1,3 +1,43 @@
+<html>
+<head>
+	<title>Alex's Luma3DS Builds</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-latest.js"></script> 
+	<script type="text/javascript" src="jquery.tablesorter.js"></script>
+	<script id="js">$(function() {
+
+	// initial sort set using sortList option
+	$(".table1").tablesorter({
+		theme : 'blue',
+		// sort on the first column and second column in ascending order
+		sortList: [[0,0],[1,0]]
+	});
+
+	// initial sort set using data-sortlist attribute (see HTML below)
+	$(".table2").tablesorter({
+		theme : 'blue'
+	});
+
+});</script>
+</head>
+<body>
+<div class="main">
+<h1>Luma3DS Builds!</h1>
+<p><i>Disclaimer: I am not associated with Aurora Wright. These builds are provided entirely unofficially and entirely untested. Use at your own risk.</i></p>
+<p>All commits are now signed: See <a href="https://github.com/astronautlevel2/Luma3DS/commits/gh-pages">the commits page</a> if you want to verify the integrity of the builds</p>
+<table class="table2" data-sortlist="[[0,0],[2,0]]">
+	<thead>
+		<tr>
+			<th style="cursor: pointer">File</th>
+			<th style="cursor: pointer">Commit</th>
+			<th style="cursor: pointer">Branch</th>
+			<th style="cursor: pointer">Date</th>
+			<th style="cursor: pointer">Message</th>
+		</tr>
+	</thead>
+	<tbody>
+<tr><td><p><a href=/Luma3DS/builds/Luma3DS-3a4868c.zip>Luma3DS-3a4868c.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/3a4868c1141c52a4c8ffc3a6fef3795bc4636aaa>3a4868c</a></td><td>legacy</td><td>2017-7-6</td><td>Fix conflict between emunand selection and payload booting when Autoboot E...</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-6d539f5.zip>Luma3DS-6d539f5.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/6d539f512044eacd1bb646f9b2b25795e92576cb>6d539f5</a></td><td>legacy</td><td>2017-7-6</td><td>Fix conflict between emunand selection and payload booting when Autoboot E...</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-6b5cc93.zip>Luma3DS-6b5cc93.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/6b5cc93780f6a4499ab02be3ae6b44e200440122>6b5cc93</a></td><td>master</td><td>2017-7-6</td><td>Merge branch 'master' of https://github.com/AuroraWright/Luma3DS</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-8845e4d.zip>Luma3DS-8845e4d.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/8845e4dd2062e0427adb55592ca7afa6cb3c95ea>8845e4d</a></td><td>master</td><td>2017-7-5</td><td>Merge pull request #704 from Hikari-chin/master</td></tr>
