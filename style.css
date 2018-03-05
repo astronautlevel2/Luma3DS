@@ -1,58 +1,42 @@
-body {
-	background: url("background.png");
-	text-align: center;
-	background-attachment: fixed;
-    font-family: 'Muli', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html, body {
+	background: url(BG.png);
+	font-family: 'Lato', sans-serif;
+	color: #e5e5e5;
 }
 
-.main {
+img {height: 110px; width: auto; right: 0; position: absolute; padding-top: 15px; padding-right: 20px;}
+
+.container {
+	width: 1200px;
+	max-width: 100%;
+	height: 100%;
+	padding: 40px;
 	margin: auto;
-	background-color: rgba(255,255,255, .5);
-	padding: 0%;
-	padding-top: 0px;
-	text-align: center;
-	width: 65%;
 }
 
-.toplink {
-	color: black;
+#header{
+	right: 0;
+	background: #053542;
+	padding: 10px 17px 10px 17px;
+	width: 1200px;
+	max-width: 100%;
 }
-table, th, td {
+
+#header h1 { text-align: center;	padding-bottom: 15px; }
+#header p { font-size: 14px; text-align: center; padding-bottom: 8px;}
+a { color: #55C34D; }
+
+#table {
+	background-color: #02222B;
+	width: 100%;
 	padding: 10px;
-	border: 1px solid black;
-	margin-left: auto;
-	margin-right: auto;}
 }
 
-table { 
-	width: 640px; 
-	border-collapse: collapse; 
-	border-spacing: 0; 
-}
-tr:hover {background-color: #f5f5f5}
-td, th { 
-	border: 1px solid transparent;
-	height: 30px; 
-	transition: all 0.3s;
-}
+tr:nth-child(even) {background: #021a21;}
+tr, th, td { padding: 4px 6px 4px 12px; font-size: 15.5px;}
+table {text-align: center; margin: auto; text-align: center;}
 
-th {
-	background: #3d3d3d;
-	font-weight: bold;
-	color: #f4f4f4;
-    font-size: 20;
-}
-
-td {
-	text-align: center;
-	color: #f3f3f3;
-}
-
-tr td { background: #777; }   
-
-
-tr td:hover { background: #e6e6e6; color: #000; }
-
-td:hover a {color: #000;}
-
-a {transition: all 0.3s; color: #f2f2f2;}
+#footer {text-align: right;}
