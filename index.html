@@ -1,42 +1,48 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Alex's Luma3DS Builds</title>
+	<title>Luma3DS Builds | AstronautLevel</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="jquery-latest.js"></script> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="AstronautLevel2" />
+	<meta property="og:title" content="Luma 3DS Builds" />
+	<meta property="og:image" content="Luma.png" />
+	<meta property="og:description"
+		content = "Find the latest Luma3DS Hourly Builds" />
+	<script type="text/javascript" src="jquery-latest.js"></script>
 	<script type="text/javascript" src="jquery.tablesorter.js"></script>
-	<script id="js">$(function() {
-
-	// initial sort set using sortList option
-	$(".table1").tablesorter({
-		theme : 'blue',
-		// sort on the first column and second column in ascending order
-		sortList: [[0,0],[1,0]]
+	<script id="js">
+		$(function() {
+		$(".table1").tablesorter({
+			theme : 'blue',
+			sortList: [[0,0],[1,0]]
+		});
+		$(".table2").tablesorter({
+			theme : 'blue'
+		});
 	});
-
-	// initial sort set using data-sortlist attribute (see HTML below)
-	$(".table2").tablesorter({
-		theme : 'blue'
-	});
-
-});</script>
+	</script>
 </head>
 <body>
-<div class="main">
-<h1>Luma3DS Builds!</h1>
-<p><i>Disclaimer: I am not associated with Aurora Wright. These builds are provided entirely unofficially and entirely untested. Use at your own risk.</i></p>
-<p>All commits are now signed: See <a href="https://github.com/astronautlevel2/Luma3DS/commits/gh-pages">the commits page</a> if you want to verify the integrity of the builds</p>
-<table class="table2" data-sortlist="[[0,0],[2,0]]">
-	<thead>
-		<tr>
-			<th style="cursor: pointer">File</th>
-			<th style="cursor: pointer">Commit</th>
-			<th style="cursor: pointer">Branch</th>
-			<th style="cursor: pointer">Date</th>
-			<th style="cursor: pointer">Message</th>
-		</tr>
-	</thead>
-	<tbody>
+	<img src="luma.png">
+	<div class="container">
+		<div id="header">
+			<h1> Luma3DS Builds!</h1>
+			<p id="Disclaimer">I am not associated with Aurora Wright. These builds are provided entirely unofficially and entirely untested. Use at your own risk.</p>
+			<p>All commits are now signed: See <a href="https://github.com/astronautlevel2/Luma3DS/commits/gh-pages">the commits page</a> if you want to verify the integrity of the builds</p>
+		</div>
+		<div id="table">
+			<table class="table2" data-sortlist="[[0,0],[2,0]]">
+				<thead>
+					<tr>
+						<th style="cursor: pointer">File</th>
+						<th style="cursor: pointer">Commit</th>
+						<th style="cursor: pointer">Branch</th>
+						<th style="cursor: pointer">Date</th>
+						<th style="cursor: pointer">Message</th>
+					</tr>
+				</thead>
+			<tbody>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-553f8d2.zip>Luma3DS-553f8d2.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/553f8d2533e5e6a23cc89c5e674a01bc6e84aed7>553f8d2</a></td><td>master</td><td>2018-1-12</td><td>Remove lto for sysmodules</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-2ae5ed0.zip>Luma3DS-2ae5ed0.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/2ae5ed0f845da0d5984a23ed89336dc3904ce1a2>2ae5ed0</a></td><td>test</td><td>2018-1-6</td><td>Test2</td></tr>
 <tr><td><p><a href=/Luma3DS/builds/Luma3DS-2c47913.zip>Luma3DS-2c47913.zip</a></p></td><td><a href=https://github.com/AuroraWright/Luma3DS/commit/2c4791304acfd457329e8abe236e3a5f68479b6f>2c47913</a></td><td>test</td><td>2018-1-6</td><td>Test</td></tr>
